@@ -38,7 +38,7 @@ $ catkin_make
 $ source devel/setup.bash
 
 # Launch the world file in Gazebo
-$ roslaunch my_robot world.launch
+$ roslaunch my_robot myworld.launch
 
 # Open a new terminal and launch the nodes the detect and chase the white ball
 $ source devel/setup.bash
@@ -46,7 +46,7 @@ $ roslaunch ball_chaser ball_chaser.launch
 ```
 
 ## Directory Structure
-    .Project2                          # Go Chase It Project
+    .Project                           # Chase Ball Project
     ├── my_robot                       # my_robot package                   
     │   ├── launch                     # launch folder for launch files   
     │   │   ├── robot_description.launch
