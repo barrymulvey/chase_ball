@@ -56,8 +56,8 @@ $ roslaunch ball_chaser ball_chaser.launch
     │   ├── urdf                       # urdf folder for xarco files
     │   │   ├── my_robot.gazebo
     │   │   ├── my_robot.xacro
-    │   ├── world                      # world folder for world files
-    │   │   ├── <yourworld>.world
+    │   ├── worlds                     # world folder for world files
+    │   │   ├── myworld.world
     │   ├── CMakeLists.txt             # compiler instructions
     │   ├── package.xml                # package info
     ├── ball_chaser                    # ball_chaser package                   
