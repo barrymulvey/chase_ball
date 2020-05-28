@@ -13,6 +13,14 @@ This package holds a robot, a white ball, and the surrounding world. The robot i
 
 This package contains two nodes responsible for detecting the ball and driving towards it. The process_image node analyses the robot's camera image to detect the presence and location of the white ball. If a ball exists, the node requests a service via the client to drive the robot towards it. The drive_bot node provides a service to drive the robot by controlling its linear and angular velocities. 
 
+## Screenshots
+
+![Robot Chasing Ball Screenshot 1](images/chase_ball_1.png)
+
+![Robot Chasing Ball Screenshot 2](images/chase_ball_2.png)
+
+![Robot Chasing Ball Screenshot 3](images/chase_ball_3.png)
+
 ## Building
 Prerequisites/Dependencies: [Gazebo](http://gazebosim.org/) and ROS. 
 
