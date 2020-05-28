@@ -14,33 +14,41 @@ This package holds a robot, a white ball, and the surrounding world. The robot i
 This package contains two nodes responsible for detecting the ball and driving towards it. The process_image node analyses the robot's camera image to detect the presence and location of the white ball. If a ball exists, the node requests a service via the client to drive the robot towards it. The drive_bot node provides a service to drive the robot by controlling its linear and angular velocities. 
 
 ## Building
+Prerequisites/Dependencies: [Gazebo](http://gazebosim.org/) and ROS. 
 
+With the prerequisites met, source global ros: 
 ```
-# Source global ros
 $ source /opt/ros/<your_ros_version>/setup.bash
-
-# Create and initialise a catkin workspace
+```
+Create a catkin workspace:
+```
 $ mkdir -p catkin_ws/src && cd catkin_ws
-$ catkin_init_workspace
-
-# Clone the driver
-$ git clone https://github.com/mulbarry/chase_ball.git src/chase_ball
-
-# Install dependencies
+```
+Clone the driver:
+```
+$ git clone https://github.com/mulbarry/gazebo_world.git src/gazebo_world
+```
+Install dependencies:
+```
 $ sudo apt update -qq
 $ rosdep update
 $ rosdep install --from-paths src --ignore-src -y
-
-# Build the workspace
+```
+Build the workspace:
+```
 $ catkin_make
-
-# Activate the workspace (i.e. source it)
+```
+Activate the workspace:
+```
 $ source devel/setup.bash
-
-# Launch the world file in Gazebo
-$ roslaunch my_robot myworld.launch
-
-# Open a new terminal and launch the nodes the detect and chase the white ball
+```
+Launch the world file in Gazebo:
+```
+$ roslaunch my_robot world.launch
+```
+Open a new terminal and launch the nodes to detect and chase the white ball: 
+```
+$ cd catkin_ws
 $ source devel/setup.bash
 $ roslaunch ball_chaser ball_chaser.launch
 ```
