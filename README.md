@@ -34,7 +34,7 @@ $ mkdir -p catkin_ws/src && cd catkin_ws
 ```
 Clone the driver:
 ```
-$ git clone https://github.com/mulbarry/gazebo_world.git src/gazebo_world
+$ git clone https://github.com/barrymulvey/gazebo_world.git src/gazebo_world
 ```
 Install dependencies:
 ```
